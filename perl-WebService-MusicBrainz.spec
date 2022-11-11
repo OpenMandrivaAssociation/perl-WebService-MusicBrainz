@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 %define upstream_name    WebService-MusicBrainz
 %define upstream_version 1.0.6
 
