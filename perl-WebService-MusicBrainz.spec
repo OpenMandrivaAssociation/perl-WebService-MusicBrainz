@@ -1,19 +1,17 @@
 %define debug_package %{nil}
 
-%define upstream_name    WebService-MusicBrainz
-%define upstream_version 1.0.6
+%define oname    WebService-MusicBrainz
 
 %{?perl_default_filter}
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    1
-
 Summary:    Web service API to MusicBrainz database
+Name:       perl-%{oname}
+Version:    1.0.6
+Release:    1
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    https://www.cpan.org/modules/by-module/WebService/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://search.cpan.org/dist/%{oname}
+Source0:    https://www.cpan.org/modules/by-module/WebService/%{oname}-%{version}.tar.gz
 
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Mojolicious)
@@ -31,7 +29,7 @@ This module will act as a factory using static methods to return specific
 web service objects;
 
 %prep
-%autosetup -n %{upstream_name}-%{upstream_version}
+%autosetup -n %{oname}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
