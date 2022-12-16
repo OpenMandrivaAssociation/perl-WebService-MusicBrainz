@@ -18,7 +18,7 @@ BuildRequires: perl(Mojolicious)
 BuildArch:  noarch
 
 %files
-%doc Changes META.json META.yml MYMETA.yml
+%doc Changes META.json META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
 
