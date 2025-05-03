@@ -7,7 +7,7 @@
 Summary:    Web service API to MusicBrainz database
 Name:       perl-%{oname}
 Version:    1.0.6
-Release:    1
+Release:    2
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://search.cpan.org/dist/%{oname}
