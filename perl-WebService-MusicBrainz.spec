@@ -13,6 +13,7 @@ Group:      Development/Perl
 Url:        https://search.cpan.org/dist/%{oname}
 Source0:    https://www.cpan.org/modules/by-module/WebService/%{oname}-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Mojolicious)
 BuildArch:  noarch
